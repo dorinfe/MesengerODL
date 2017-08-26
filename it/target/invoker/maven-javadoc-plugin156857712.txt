@@ -1,0 +1,7 @@
+Invoking Maven for the goals: [org.apache.maven.plugins:maven-javadoc-plugin:2.10.3:test-javadoc] with no properties
+
+M2_HOME=C:\apache-maven-3.5.0\bin\..
+MAVEN_OPTS=-Xmx1048m -XX:MaxPermSize=512m
+JAVA_HOME=C:\Java\jdk1.8.0_144\jre\..
+JAVA_OPTS=null
+
