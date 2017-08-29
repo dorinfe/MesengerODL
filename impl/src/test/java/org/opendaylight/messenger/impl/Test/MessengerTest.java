@@ -32,16 +32,17 @@ import org.junit.Before;
 
 
 public class MessengerTest {
-	private static final String INPUT_CSV_FILE_NAME = "src\\main\\resources\\Periodic Table of Elements.csv";
-	private static final String OUTPUT_JASON_FILE_NAME = "src\\main\\resources\\PeriodicTable.json";
-	private static final String OUTPUT_XML_FILE_NAME = "src\\main\\resources\\PeriodicTable.xml";
+	private static final String INPUT_CSV_FILE_NAME = "src"+File.separator+"main"+File.separator+ "resources"+File.separator+"Periodic Table of Elements.csv";
+	private static final String OUTPUT_JASON_FILE_NAME = "src"+File.separator+"main"+File.separator+ "resources"+File.separator+"PeriodicTable.json";
+	private static final String OUTPUT_XML_FILE_NAME = "src"+File.separator+"main"+File.separator+ "resources"+File.separator+"PeriodicTable.xml";
+	
 	
 
 	MessengerProvider messengerProvider = new MessengerProvider(null) ;
 	
 	@Before public void initialize() {
 		 
-		String fileName = "src\\main\\resources\\Periodic Table of Elements.csv";
+		String fileName = INPUT_CSV_FILE_NAME;
 		messengerProvider.setPeriodicTable(new PeriodicTable(fileName));
 	}
 	
